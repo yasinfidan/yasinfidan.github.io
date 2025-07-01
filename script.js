@@ -36,7 +36,9 @@ links.forEach(link => {
 
             const target = document.querySelector(href);
             if (target) {
-                target.scrollIntoView({ behavior: 'smooth' });
+                const yOffset = -80; // Navbar yüksekliği kadar offset (gerekirse ayarlayın)
+                const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
             }
         }
         // dış sayfa linklerinde e.preventDefault yok, doğal yönlenir
