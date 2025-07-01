@@ -83,3 +83,21 @@ window.addEventListener('scroll', () => {
         backToTopBtn.style.pointerEvents = 'none';
     }
 });
+
+// Hamburger menü aç/kapat
+const menuToggle = document.querySelector('.menu-toggle');
+const navUl = document.querySelector('nav ul');
+menuToggle.addEventListener('click', () => {
+    navUl.classList.toggle('open');
+    menuToggle.classList.toggle('active');
+});
+
+// Menüde bir linke tıklanınca menü kapansın (mobilde)
+navUl.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 800 && navUl.classList.contains('open')) {
+            navUl.classList.remove('open');
+            menuToggle.classList.remove('active');
+        }
+    });
+});
