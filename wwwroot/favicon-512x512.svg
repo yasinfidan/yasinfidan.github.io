@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" style="background: #00aaff">
+    <foreignObject width="512" height="512">
+        <div xmlns="http://www.w3.org/1999/xhtml" style="
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 409.6px;
+            font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+            line-height: 1;
+        ">⌨️</div>
+    </foreignObject>
+</svg>
